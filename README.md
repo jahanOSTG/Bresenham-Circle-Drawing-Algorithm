@@ -58,5 +58,6 @@ The points calculated in one octant are mirrored across the other seven octants 
 ## Visualization
 
 Here is a visual representation of the algorithm:
+<img src="output.png" height="400" weidth="400">
 
 
