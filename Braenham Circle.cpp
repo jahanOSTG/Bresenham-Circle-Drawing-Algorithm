@@ -6,9 +6,9 @@ using namespace std;
 void drawCircle(int xc, int yc, int r) {
     int x = 0;
     int y = r;
-    int p = 3 - 2 * r; // Bresenham decision parameter
+    int p = 3 - 2 * r; 
 
-    // Draw initial 8 symmetric points
+ 
     while (x <= y) {
         // 8 symmetric points
         putpixel(xc + x, yc + y, WHITE);
@@ -33,7 +33,7 @@ void drawCircle(int xc, int yc, int r) {
 
 int main() {
     int gd = DETECT, gm;
-    initgraph(&gd, &gm, ""); // Initialize graphics mode
+    initgraph(&gd, &gm, ""); 
 
     int xc, yc, r;
     cout << "Enter center point (xc yc): ";
@@ -42,10 +42,10 @@ int main() {
     cout << "Enter radius r: ";
     cin >> r;
 
-    drawCircle(xc, yc, r); // Call the function to draw circle
+    drawCircle(xc, yc, r); 
 
-    getch();    // Wait for a key press
-    closegraph(); // Close graphics window
+    getch();    
+    closegraph(); 
     return 0;
 }
 
